@@ -1,8 +1,8 @@
-FROM node:4.4
+FROM node:4.4.7
 
-COPY [".", "/src/usr/"]
+COPY [".", "/usr/src/"]
 
-WORKDIR /src/usr
+WORKDIR /usr/src
 
 RUN npm install
 
