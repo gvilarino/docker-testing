@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  app:
+    image: gvilarino/docker-testing
+    environment:
+      MONGO_URL: "mongodb://db/test"
+    depends_on:
+      - db
+    ports:
+      - "3000:3000"
+
+  db:
+    image: mongo
