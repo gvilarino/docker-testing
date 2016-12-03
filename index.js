@@ -4,7 +4,7 @@ const port = 3000
 const MongoClient = require('mongodb').MongoClient
 
 // Connection URL
-const mongoUrl = process.env.MONGO_URL || 'mongodb://localhost:27017/test';
+const mongoUrl = process.env.MONGO_URL || 'mongodb://db:27017/test';
 
 http.createServer((req, res) => {
   // Use connect method to connect to the Server
